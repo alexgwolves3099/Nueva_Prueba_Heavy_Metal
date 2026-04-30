@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería Global Dark</title>
+    <title>Concierto Rock</title>
     <style>
         :root {
             color-scheme: dark;
-            --bg: #0b1119;
-            --surface: rgba(18, 24, 34, 0.9);
-            --surface-strong: #121b29;
-            --accent: #7c5cff;
-            --accent-soft: rgba(124, 92, 255, 0.18);
-            --text: #eef2ff;
-            --muted: #9ca3af;
-            --border: rgba(255,255,255,0.08);
+            --bg: #040404;
+            --surface: rgba(15, 15, 15, 0.95);
+            --surface-strong: #0d0d0d;
+            --accent: #e63946;
+            --accent-soft: rgba(230, 57, 70, 0.16);
+            --text: #f6f5f5;
+            --muted: #999;
+            --border: rgba(255, 89, 117, 0.18);
         }
 
         * {
@@ -25,8 +25,8 @@
             margin: 0;
             min-height: 100vh;
             font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: radial-gradient(circle at top left, rgba(124, 92, 255, 0.24), transparent 25%),
-                        radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.16), transparent 22%),
+            background: radial-gradient(circle at top left, rgba(230, 57, 70, 0.18), transparent 18%),
+                        radial-gradient(circle at bottom right, rgba(255, 184, 180, 0.12), transparent 24%),
                         var(--bg);
             color: var(--text);
         }
@@ -49,6 +49,15 @@
             font-weight: 700;
             margin-bottom: 1rem;
             font-size: 0.85rem;
+        }
+
+        .hero-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            background: linear-gradient(180deg, rgba(15,15,15,0.98), rgba(10,10,10,0.94));
+            border: 1px solid var(--border);
+            box-shadow: 0 28px 80px rgba(0,0,0,0.22);
         }
 
         h1 {
@@ -222,22 +231,22 @@
 <body>
     <div class="page-wrap">
         <header>
-            <div class="eyebrow">Muestra Destacada</div>
-            <h1>William Pereira</h1>
-            <p class="description">Una presentación limpia y poderosa con una sola imagen destacada. El enfoque está en la Torre de Tokio con estilo moderno Dark.</p>
+            <div class="eyebrow">Concierto Rock</div>
+            <h1>Noche de Rock en Vivo</h1>
+            <p class="description">Sumérgete en la energía única de un concierto de rock con una sola imagen protagonista: guitarra, luces rojas y una multitud vibrando en la oscuridad.</p>
         </header>
 
         <section class="gallery">
-            <article class="card" style="min-height: 620px;">
-                <img src="https://images.pexels.com/photos/32774182/pexels-photo-32774182/free-photo-of-torre-de-tokio-iluminada-de-noche-en-japon.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Torre de Tokio iluminada de noche" />
+            <article class="card hero-card" style="min-height: 620px;">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80" alt="Concierto de rock con fondo oscuro y luces rojas" />
                 <div class="card-info">
-                    <h2 class="card-title">Torre de Tokio</h2>
-                    <p class="card-subtitle">Icono luminoso de la ciudad, resaltado con un diseño oscuro y elegante.</p>
+                    <h2 class="card-title">Rock Under Lights</h2>
+                    <p class="card-subtitle">Un momento épico en el escenario donde la música y la noche se funden en rojo y negro.</p>
                 </div>
             </article>
         </section>
 
-        <div class="footer-note">Una sola imagen, un impacto visual máximo. Ideal para una exhibición elegante y moderna.</div>
+        <div class="footer-note">Una experiencia visual intensa, perfecta para temas rockeros y presentaciones con actitud.</div>
     </div>
 </body>
 </html>
